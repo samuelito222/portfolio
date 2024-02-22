@@ -21,3 +21,19 @@
 .qcc {
   background-color: #a1ed39;
 }
+
+
+
+.chilanka-regular {
+  font-family: "Chilanka", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #030062
+}
+
+.mybg {
+  background-image: url(../imgs/aphoto.webp);
+/*  background-color: #171515;  */
+  background-color: rgba(9,8.2,8.2,.8);
+}
+
