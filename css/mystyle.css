@@ -19,10 +19,16 @@
 
 
 .qcc {
-  background-color: #a1ed39;
+  background-color: #1fff09;
 }
 
 
+.roboto-mono-700 {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
 
 .chilanka-regular {
   font-family: "Chilanka", cursive;
@@ -33,7 +39,15 @@
 
 .mybg {
   background-image: url(../imgs/aphoto.webp);
-/*  background-color: #171515;  */
-  background-color: rgba(9,8.2,8.2,.8);
 }
 
+.bg-color-overlay {
+  background-color: rgba(9,8.2,8.2,0.5);
+/*  background-color: #171515;  */
+}
+
+
+.bdy-text {
+  font-family: "Roboto Mono", monospace;
+  color: #cccbf0;
+}
