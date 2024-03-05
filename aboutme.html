@@ -106,7 +106,33 @@
 
 <section class="col-sm-12 col-md-8">
 <h5 class="display-5">Photos</h5>
-
+<div id="photoAlbum" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imgs/dwntwn.webp" class="d-block w-100" alt="">
+    </div> 
+    <div class="carousel-item">
+      <img src="imgs/rainey.webp" class="d-block w-100" alt="">
+    </div> 
+    <div class="carousel-item">
+      <img src="imgs/independent.webp" class="d-block w-100" alt="">
+    </div> 
+    <div class="carousel-item">
+      <img src="imgs/6xgl.webp" class="d-block w-100" alt="">
+    </div>
+  </div> 
+  <button class="carousel-control-prev" type="button" 
+   data-bs-target-"#photoAlbum" 
+   data-bs-slide="prev">
+   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+   <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" 
+   data-bs-target-"#photoAlbum" data-bs-slide="next">
+   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+   <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
 
 
@@ -116,10 +142,10 @@
 
 <article class="row">
 
-<div class="col-sm-12 col-md-6 card" style="transition-property:background-color;transition-duration: 6s; background-color: pink;">
+<div class="col-sm-12 col-md-6 card" >
 <blockquote class="blockquote card-body">
 <p class="card-text">The mass of men lead lives of quiet desperation.</p>
-<footer class="blockquote-footer"><cite title="Henry David Thoreau">Henry David Thoreau</cite></footer>
+<footer class="fade-in blockquote-footer"><cite title="Henry David Thoreau">Henry David Thoreau</cite></footer>
 </blockquote>
 
 </div>
@@ -138,7 +164,17 @@
 </main>
 
 
+<a href="#new" class="btn btn-primary">Click</a>
+<div id="new" class="badge">Fade in ....</div>
+
+
 <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+<script type="text/javascript">
+
+const carousel = new bootstrap.Carousel('#photoAlbum');
+
+</script>
+
   </body>
 </html>
 
