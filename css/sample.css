@@ -9,3 +9,21 @@ width: 20%;
 time {
 float: right;
 }
+
+
+
+#first {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+}
+
+#first #second {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background: green;
+  left: 25%;
+  top: 25%;
+}
