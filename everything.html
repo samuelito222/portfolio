@@ -250,9 +250,145 @@ Schizophrenia yeah!
   </div> <!-- closes col -->
  
   <div class="col-md-4 col-sm-12">
+    <!-- list group -->
+
+    <div class="list-group">
+      <button type="button" 
+        class="list-group-item list-group-item-action active"
+        aria-current="true">
+        Community
+      </button>
+      <button type="button" 
+        class="list-group-item list-group-item-action">
+        Internet
+      </button>
+      <button type="button"
+        class="list-group-item list-group-item-action">
+        Books
+      </button>
+      <button type="button"
+        class="list-group-item list-group-item-action">
+        History
+      </button>
+    </div> <!-- closes list group --> 
+      
+    </div>
+
   </div> <!-- closes col -->
 
 </div> <!--closes row -->
+
+<div class="row">
+<div class="col-md-4 col-sm-12"
+  <!-- button trigger modal -->
+
+  <button type="button" class="btn btn-primary" 
+    data-bs-toggle="modal"
+    data-bs-target="#staticBackdrop">
+    Launch static backdrop modal
+  </button>
+
+  <!-- modal -->
+  <div class="modal fade" id="staticBackdrop" 
+    data-bs-backdrop="static" 
+    data-bs-keyboard="false"
+    tabindex="-1"
+    aria-labelledby="staticBackdropLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">
+          Schizophrenia
+          </h1>
+          <button type="button" class="btn-close"
+            data-bs-dismiss="modal" aria-label="Close">
+          </button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary"
+            data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">
+            Understood</button>
+        </div>  
+      </div>
+    </div>
+  </div>
+
+</div> <!-- closes column --> 
+<div class="col-md-4 col-sm-12">
+  <a class="btn btn-primary" 
+    data-bs-toggle="offcanvas"
+    href="#offcanvasExample"
+    role="button"  
+    aria-controls="offcanvasExample">
+    Link with href
+  </a>
+  <button class="btn btn-primary" type="button"
+    data-bs-toggle="offcanvas"
+    data-bs-target="#offcanvasExample"
+    aria-controls="offcanvasExample">
+    Button with data-bs-target
+  </button>
+
+  <div class="offcanvas offcanvas-start" 
+    tabindex="-1" id="offcanvasExample" 
+    aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <button type="button" class="btn-close" 
+        data-bs-dismiss="offcanvas"
+        aria-label="Close">
+      </button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        Some text as placeholder. What goes here changes the world.!
+      </div> 
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button"
+          data-bs-toggle="dropdown">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="books.html">Books</a></li>
+          <li><a class="dropdown-item" 
+            href="community.html">Community</a></li>
+          <li><a class="dropdown-item" 
+            href="internet.html">Internet</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+<div class="col-md-4 col-sm-12"
+</div>
+
+
+
+
+</div> <!-- closes row -->
+<div class="row">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="everything.html">Everything</a>
+    <button class="navbar-toggler" type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  </div>
+</nav>
+
+
+</div> <!-- closes row -->
 
 </div> <!--closes container -->
 
