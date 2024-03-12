@@ -145,9 +145,17 @@ Schizophrenia yeah!
   <div class="card" style="width: 18rem;">
     <img src="..." class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">Schizophrenia card</h5>
-      <p class="card-text">
-        What should i put here in some schizophrenia text</p>
+      <h5 class="card-title placeholder-glow">
+        <span class="placeholder col-6"></span> 
+      </h5>
+  
+      <p class="card-text placeholder-glow">
+        <span class="placeholder col-7"></span> 
+        <span class="placeholder col-4"></span> 
+        <span class="placeholder col-4"></span> 
+        <span class="placeholder col-6"></span> 
+        <span class="placeholder col-8"></span> 
+      </p>
     </div>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">Schizophrenia</li>
@@ -279,7 +287,7 @@ Schizophrenia yeah!
 </div> <!--closes row -->
 
 <div class="row">
-<div class="col-md-4 col-sm-12"
+<div class="col-md-4 col-sm-12">
   <!-- button trigger modal -->
 
   <button type="button" class="btn btn-primary" 
@@ -365,7 +373,14 @@ Schizophrenia yeah!
 
 
 </div>
-<div class="col-md-4 col-sm-12"
+<div class="col-md-4 col-sm-12">
+  <div class="progress" role="progressbar" aria-label="Basic example"
+    aria-valuenow="75"
+    aria-valuemin="0"
+    aria-valuemax="100">
+    <div class="progress-bar" style="width: 75%;"></div>
+  </div>
+
 </div>
 
 
@@ -383,13 +398,184 @@ Schizophrenia yeah!
       aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" 
+            aria-current="page" 
+            href="aboutme.html">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" 
+            href="community.html">Community</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle"
+            href="index.html"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Home
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" 
+                  href="community.html">Community
+              </a></li>
+            <li><a class="dropdown-item"
+                  href="internet.html">Internet
+              </a></li>
+            <li>
+              <a class="dropdown-item"
+                  href="books.html">Books
+              </a></li>
+            <li>
+              <a class="dropdown-item"
+                  href="history.html">History
+              </a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li>
+              <a class="dropdown-item"
+                  href="aboutme.html">About Me
+              </a></li>
+            <li>
+              <a class="dropdown-item "
+                  href="gameplan.html">Game Plan
+              </a></li>
+          </ul>
+        </li>  
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">
+            Sweepstakes Winner
+          </a>
+        </li>
+      </ul>
 
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search"
+          aria-label="Search">
+        <button class="btn btn-outline-success" 
+          type="submit">Search
+        </button>
+      </form>
+    </div>
   </div>
 </nav>
 
 
 </div> <!-- closes row -->
+<div class="row">
+<div class="col-md-4 col-sm-12">
+  <div class="spinner-border text-success" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+<div class="col-md-4 col-sm-12">
 
+  <button type="button" 
+    class="btn btn-primary"
+    id="liveToastBtn">
+    Show live toast
+  </button>
+  <div class="toast-container position-fixed bottom-0 begin-0 p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive"
+    aria-atomic="true">
+    <div class="toast-header d-block">
+      <img src="imgs/rainey.webp" class="rounded w-100 me-2" 
+        alt="Buildings on Rainey St.">
+      <strong class="me-auto">Buildings</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast"
+        aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div> 
+  </div>
+  </div>
+</div>
+<div class="col-md-4 col-sm-12">
+  <button type="button" class="btn btn-lg btn-danger example-popover" 
+    data-bs-container="body"
+    data-bs-toggle="popover"
+    data-bs-title="Popover title" 
+    data-bs-content="And here's some amazing content. 
+                      It's very engaging right?!">
+    Click to toggle popover</button>
+</div>
+
+</div> <!-- closes row -->
+
+<div class="row">
+<div class="col-md-4 col-sm-12">
+
+
+<p class="muted">Schizophrenia is an awful disease. When you are sick one must do their best. Fortunately this malady is well studied and there is <a href="books.html" data-bs-toggle="tooltip" data-bs-title="Books">hope.</a> One must change one's thinking completely. One must learn to be <a href="community.html" data-bs-toggle="tooltip" data-bs-title="Community">compassionate</a> with one's self and be disciplined.</p>
+</div>
+
+<div class="col-md-4 col-sm-12">
+<!-- todo make tabbable with javascript tab plugin -->
+
+<ul class="nav nav-tabs">
+<li class="nav-item">
+  <a class="nav-link active" aria-current="page" href="everything.html">Everything</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="books.html">Books</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="community.html">Community</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="internet.html">Internet</a>
+</li>
+
+</ul>
+
+</div>
+<div class="col-md-4 col-sm-12">
+<nav aria-label="page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav>
+
+
+</div>
+</div> <!-- closes row -->
+<div class="row">
+<div class="col-4">
+  <div id="list-example" class="list-group">
+     <a class="list-group-item list-group-item-action"
+       href="#list-item-1">Item 1</a>
+     <a class="list-group-item list-group-item-action"
+       href="#list-item-2">Item 2</a>
+     <a class="list-group-item list-group-item-action"
+       href="#list-item-3">Item 3</a>
+     <a class="list-group-item list-group-item-action"
+       href="#list-item-4">Item 4</a>
+  </div>
+</div>
+
+<div class="col-8">
+  <div data-bs-spy="scroll" data-bs-target="#list-example"
+      data-bs-smooth-scroll="true"
+      class="scrollspy-example" tabindex="0">
+    <h4 id="list-item-1">Item 1</h4>
+      <p>This is a lot of text that needs to be written. What am I learning. I am learning spanish, web development and other things. I think I am doing well considering how difficult of things I am doing.</p>
+    <h4 id="list-item-2">Item 2</h4>
+      <p>This is some more text that is just filler. What is filler text, well usually filler text is not read nor written well. So there.</p>
+    <h4 id="list-item-3">Item 3</h4>
+      <p>Arrgh mas mas mas. How much can I write just to see if this scrolls well.</p>
+    <h4 id="list-item-4">Item 4</h4>
+      <p>...</p>
+  </div>
+</div>
+</div> <!-- closes row -->
 </div> <!--closes container -->
 
 
