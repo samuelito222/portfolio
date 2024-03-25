@@ -1,0 +1,66 @@
+
+
+
+.positioned {
+
+  position: fixed;
+  top: 100px;
+  left: 150px;
+  width: 600px;
+  background-color: red;
+
+}
+.positioned2 {
+
+  position: sticky;
+  top: 200px;
+  left: 150px;
+  width: 600px;
+  background-color: red;
+
+}
+.positioned3 {
+
+  position: sticky;
+  top: 400px;
+  left: 150px;
+  width: 600px;
+  background-color: red;
+
+}
+.positioned4 {
+
+  position: fixed;
+  top: 500px;
+  left: 150px;
+  width: 600px;
+  background-color: red;
+
+}
+
+.gutter {
+  background-color: blue;
+  float: left;
+  width: 100px;
+
+}
+
+.headrr {
+  position: sticky;
+  top: 30px;
+  left: 30px;
+  background-color: green;
+}
+
+.container {
+  width: 600px;
+  margin: auto;
+}
+
+p {
+  color: white;
+}
+
+html {
+  background-image: url("/imgs/webb.png");
+}
