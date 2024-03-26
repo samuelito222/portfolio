@@ -1,4 +1,80 @@
 <!doctype html>
 
-<html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <title>Infinite Regress</title>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col"> 
+      <div id="outer" style="height: 300px; width: 300px;
+          position: absolute;
+          top: 200px;
+          left: 200px;" 
+        class="border border-primary border-5 p-1">
+       <div id="inner" style="height: 100px; width: 100px;
+          position: absolute;
+          top: 10px;
+          left: 10px;" 
+        class="border border-primary border-5 p-1">
+        <a id="box" 
+          class="bi bi-box-fill align-items-end" 
+          href="infiniteregress.html"
+          style="position: absolute;
+          top: 5px;
+          left: 5px;">
+        </a>  
+       </div> 
+      </div> 
+    </div>
+  </div> 
+</div>
+
+<script>
+const box = document.getElementById('box');
+const outer = document.getElementById('outer');
+const inner = document.getElementById('inner');
+
+var wid = getRandomInt(window.innerWidth-300);
+var hig = getRandomInt(window.innerHeight-300);
+
+wid = wid +"px";
+hig = hig + "px";
+outer.style.top = hig;
+outer.style.left = wid;
+
+var in_wid = getRandomInt(190);
+var in_hig = getRandomInt(190);
+
+in_wid = in_wid+"px";
+in_hig = in_hig+"px";
+
+inner.style.top= in_hig;
+inner.style.left= in_wid;
+
+var bo_wid = getRandomInt(80);
+var bo_hig = getRandomInt(80);
+
+bo_wid = bo_wid+"px";
+bo_hig = bo_hig+"px";
+
+
+
+box.style.top = bo_wid;
+box.style.left = bo_hig;
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max );
+}
+
+console.log(getRandomInt(500));
+</script>
+</body>
+
+
 </html>
